@@ -1773,6 +1773,7 @@ ensureDomLoaded(()=>{
 			a.href+="#bypassClipboard="+a.href.split("?"+soralink_data[domain]+"=")[1]
 		}))
 	}
+	domainBypass("www.tech2learners.com", () => safelyNavigate(downloadButton.href))
 	domainBypass("channelmyanmar.org",()=>document.querySelectorAll("a[href^='https://channelmyanmar.org?1c17f28bf0=']").forEach(a=>{
 		if(a.classList.contains("FLMBTN-Btn"))
 		{
